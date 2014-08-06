@@ -1,7 +1,11 @@
 parameters:
-#    php_orchestra_base.example.class: PHPOrchestra\BaseBundle\Example
+#--[EXTEND SYMFONY 2 ROUTING]---#
+
+    router.class : 'PHPOrchestra\BaseBundle\Routing\PhpOrchestraRouter'
+    router.options.matcher_class : 'PHPOrchestra\BaseBundle\Routing\PhpOrchestraUrlMatcher'
+    router.options.matcher_base_class : 'PHPOrchestra\BaseBundle\Routing\PhpOrchestraUrlMatcher'
+    router.options.matcher.cache_class : null
+    router.options.generator_class : 'PHPOrchestra\BaseBundle\Routing\PhpOrchestraUrlGenerator'
+    router.options.generator_base_class : 'PHPOrchestra\BaseBundle\Routing\PhpOrchestraUrlGenerator'
 
 services:
-#    php_orchestra_base.example:
-#        class: %php_orchestra_base.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]
