@@ -1,4 +1,15 @@
 parameters:
-
+    php_orchestra_base.listener.locale.class : 'PHPOrchestra\BaseBundle\EventListener\LocaleListener'
+    php_orchestra_base.manager_cache.class : 'PHPOrchestra\BaseBundle\Cache\RedisCacheManager'
 
 services:
+    # Locale listener
+    php_orchestra_base.locale_listener:
+        class: %php_orchestra_base.listener.locale.class%
+        arguments: [%kernel.default_locale%]
+        tags: [{name: kernel.event_subscriber}]
+
+    # Cache service
+    php_orchestra_base.cache_manager:
+        class: %php_orchestra_base.manager_cache.class%
+        arguments: [@snc_redis.default]
