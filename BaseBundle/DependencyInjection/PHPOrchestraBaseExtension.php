@@ -24,5 +24,11 @@ class PHPOrchestraBaseExtension extends Extension
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
+
+        $languagesAvailables = array('en', 'fr', 'de', 'es');
+        if (array_key_exists('languages_availables', $config) && !empty($config['languages_availables'])) {
+            $languagesAvailables = $config['languages_availables'];
+        }
+        $container->setParameter('php_orchestra_base.languages_availables', $languagesAvailables);
     }
 }
