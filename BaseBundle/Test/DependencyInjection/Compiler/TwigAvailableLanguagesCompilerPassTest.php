@@ -88,4 +88,3 @@ class TwigAvailableLanguagesCompilerPassTest extends \PHPUnit_Framework_TestCase
         );
     }
 }
- 
