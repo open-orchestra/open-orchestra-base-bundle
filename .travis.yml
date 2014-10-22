@@ -16,7 +16,7 @@ before_install:
   - phpenv config-add .travis.php.ini
 
 install:
-  - composer install
+  - composer install --prefer-dist
 
 script: ./bin/phpunit BaseBundle
 
