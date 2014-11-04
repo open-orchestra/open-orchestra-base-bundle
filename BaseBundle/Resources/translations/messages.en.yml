@@ -1,0 +1,3 @@
+php_orchestra_base:
+    form:
+        submit: Save

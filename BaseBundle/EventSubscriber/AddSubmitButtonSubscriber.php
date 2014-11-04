@@ -18,7 +18,7 @@ class AddSubmitButtonSubscriber implements EventSubscriberInterface
     {
         $form = $event->getForm();
         $form->add('submit', 'submit', array(
-            'label' => 'php_orchestra_backoffice.form.submit'
+            'label' => 'php_orchestra_base.form.submit'
         ));
     }
 
