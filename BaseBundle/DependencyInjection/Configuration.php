@@ -25,6 +25,7 @@ class Configuration implements ConfigurationInterface
                 ->prototype('scalar')->end()
                 ->defaultValue(array('en', 'fr', 'de', 'es'))
             ->end()
+            ->scalarNode('mediatheque_url')->defaultNull()->end()
         ->end();
 
         return $treeBuilder;
