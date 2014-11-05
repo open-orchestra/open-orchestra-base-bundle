@@ -30,5 +30,11 @@ class PHPOrchestraBaseExtension extends Extension
             $languagesAvailables = $config['languages_availables'];
         }
         $container->setParameter('php_orchestra_base.languages_availables', $languagesAvailables);
+
+        if (array_key_exists('mediatheque_url', $config) && !is_null($config['mediatheque_url'])) {
+            $container->setParameter('php_orchestra_base.mediatheque.url', $config['mediatheque_url']);
+        } else {
+            $container->setParameter('php_orchestra_base.mediatheque.url', 'http://mediatheque.dev');
+        }
     }
 }
