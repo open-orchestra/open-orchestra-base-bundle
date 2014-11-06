@@ -34,7 +34,7 @@ class PHPOrchestraBaseExtension extends Extension
         if (array_key_exists('mediatheque_url', $config) && !is_null($config['mediatheque_url'])) {
             $container->setParameter('php_orchestra_base.mediatheque.url', $config['mediatheque_url']);
         } else {
-            $container->setParameter('php_orchestra_base.mediatheque.url', 'http://mediatheque.dev');
+            $container->setParameter('php_orchestra_base.mediatheque.url', 'http://media.phporchestra.dev');
         }
     }
 }
