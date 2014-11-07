@@ -14,4 +14,11 @@ interface CurrentSiteIdInterface
      * @return string
      */
     public function getCurrentSiteId();
+
+    /**
+     * Get the current default language of the current site
+     *
+     * @return string
+     */
+    public function getCurrentSiteDefaultLanguage();
 }
