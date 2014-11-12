@@ -36,5 +36,7 @@ class PHPOrchestraBaseExtension extends Extension
         } else {
             $container->setParameter('php_orchestra_base.mediatheque.url', 'http://media.phporchestra.dev');
         }
+
+        $container->setParameter('php_orchestra_base.encryption_key', $config['encryption_key']);
     }
 }
