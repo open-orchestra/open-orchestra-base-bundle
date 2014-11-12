@@ -38,4 +38,3 @@ class EncryptionManager
         return base64_decode($encryptedToken);
     }
 }
- 
