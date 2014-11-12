@@ -26,6 +26,7 @@ class Configuration implements ConfigurationInterface
                 ->defaultValue(array('en', 'fr', 'de', 'es'))
             ->end()
             ->scalarNode('mediatheque_url')->defaultNull()->end()
+            ->scalarNode('encryption_key')->end()
         ->end();
 
         return $treeBuilder;
