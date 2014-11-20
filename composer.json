@@ -21,6 +21,7 @@
         "snc/redis-bundle" : "1.1.8"
     },
     "require-dev": {
+        "scrutinizer/ocular": "1.1.1",
         "phpunit/phpunit" : "4.0.14",
         "phake/phake": "2.0.0-beta2"
     },
