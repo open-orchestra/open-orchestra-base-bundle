@@ -7,7 +7,7 @@ cache:
     - ~/.composer/cache
 
 services:
-  - redis-server
+    - redis-server
 
 php:
   - 5.4
@@ -16,7 +16,9 @@ before_install:
   - phpenv config-add .travis.php.ini
 
 install:
-  - composer install --prefer-dist
+  - composer install --no-progress --prefer-dist
 
-script: ./bin/phpunit BaseBundle
+script: ./bin/phpunit
 
+after_script:
+  - ./bin/ocular code-coverage:upload --access-token="0ab85d09ea536dc6a7f03316b495cc078d8bee02c7c74974bbfd1fe280425a16" --format=php-clover build/logs/clover.xml
