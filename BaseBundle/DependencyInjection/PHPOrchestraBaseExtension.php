@@ -25,17 +25,16 @@ class PHPOrchestraBaseExtension extends Extension
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
 
-        $languagesAvailables = array('en', 'fr', 'de', 'es');
-        if (array_key_exists('languages_availables', $config) && !empty($config['languages_availables'])) {
-            $languagesAvailables = $config['languages_availables'];
-        }
+        $config = array_merge(array(
+            'languages_availables' => array('en', 'fr', 'de', 'es'),
+            'mediatheque_url' => 'http://media.phporchestra.dev'
+        ), $config);
+
+        $languagesAvailables = $config['languages_availables'];
         $container->setParameter('php_orchestra_base.languages_availables', $languagesAvailables);
 
-        if (array_key_exists('mediatheque_url', $config) && !is_null($config['mediatheque_url'])) {
-            $container->setParameter('php_orchestra_base.mediatheque.url', $config['mediatheque_url']);
-        } else {
-            $container->setParameter('php_orchestra_base.mediatheque.url', 'http://media.phporchestra.dev');
-        }
+        $mediathequeUrl = $config['mediatheque_url'];
+        $container->setParameter('php_orchestra_base.mediatheque.url', $mediathequeUrl);
 
         $container->setParameter('php_orchestra_base.encryption_key', $config['encryption_key']);
     }
