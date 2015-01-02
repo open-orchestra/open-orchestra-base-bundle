@@ -12,8 +12,8 @@ abstract class AbstractTaggedCompiler
 {
     /**
      * @param ContainerBuilder $container
-     * @param $managerName
-     * @param $tagName
+     * @param string           $managerName
+     * @param string           $tagName
      */
     protected function addStrategyToManager(ContainerBuilder $container, $managerName, $tagName)
     {
