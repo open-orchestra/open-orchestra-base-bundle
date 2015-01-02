@@ -33,9 +33,6 @@ class PHPOrchestraBaseExtension extends Extension
         $languagesAvailables = $config['languages_availables'];
         $container->setParameter('php_orchestra_base.languages_availables', $languagesAvailables);
 
-        $mediathequeUrl = $config['mediatheque_url'];
-        $container->setParameter('php_orchestra_base.mediatheque.url', $mediathequeUrl);
-
         $container->setParameter('php_orchestra_base.encryption_key', $config['encryption_key']);
     }
 }
