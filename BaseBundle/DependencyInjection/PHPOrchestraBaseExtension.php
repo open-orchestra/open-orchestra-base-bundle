@@ -26,8 +26,7 @@ class PHPOrchestraBaseExtension extends Extension
         $loader->load('services.yml');
 
         $config = array_merge(array(
-            'languages_availables' => array('en', 'fr', 'de', 'es'),
-            'mediatheque_url' => 'http://media.phporchestra.dev'
+            'languages_availables' => array('en', 'fr', 'de', 'es')
         ), $config);
 
         $languagesAvailables = $config['languages_availables'];
