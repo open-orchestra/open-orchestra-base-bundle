@@ -12,14 +12,14 @@
     "require": {
         "php" : ">=5.4",
         "ext-apc": "*",
-        "symfony/symfony" : "2.6.*",
-        "twig/extensions" : "*",
-        "symfony/assetic-bundle" : "*",
-        "symfony/monolog-bundle" : "*",
-        "sensio/distribution-bundle" : "*",
-        "sensio/framework-extra-bundle" : "*",
-        "sensio/generator-bundle" : "*",
-        "snc/redis-bundle" : "*"
+        "symfony/symfony" : "2.6.3",
+        "twig/extensions" : "~1.12",
+        "symfony/assetic-bundle" : "2.6.0",
+        "symfony/monolog-bundle" : "2.7.1",
+        "sensio/distribution-bundle" : "3.0.15",
+        "sensio/framework-extra-bundle" : "3.0.4",
+        "sensio/generator-bundle" : "2.5.1",
+        "snc/redis-bundle" : "~2"
     },
     "require-dev": {
         "scrutinizer/ocular": "1.1.1",
