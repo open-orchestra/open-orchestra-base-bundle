@@ -13,7 +13,7 @@
         "php" : ">=5.4",
         "ext-apc": "*",
         "symfony/symfony" : "2.6.3",
-        "twig/extensions" : "~1.12",
+        "twig/extensions" : "~1",
         "symfony/assetic-bundle" : "2.6.0",
         "symfony/monolog-bundle" : "2.7.1",
         "sensio/distribution-bundle" : "3.0.15",
