@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPOrchestra\BaseBundle\DependencyInjection\Compiler;
+namespace OpenOrchestra\BaseBundle\DependencyInjection\Compiler;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Reference;

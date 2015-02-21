@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPOrchestra\BaseBundle\DependencyInjection\Compiler;
+namespace OpenOrchestra\BaseBundle\DependencyInjection\Compiler;
 
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -22,8 +22,8 @@ class TwigAvailableLanguagesCompilerPass implements CompilerPassInterface
         $twig = $container->getDefinition('twig');
 
         $languages = array('en', 'fr', 'de', 'es');
-        if ($container->has('php_orchestra_base.languages.availables')) {
-            $languages = $container->getParameter('php_orchestra_base.languages.availables');
+        if ($container->has('open_orchestra_base.languages.availables')) {
+            $languages = $container->getParameter('open_orchestra_base.languages.availables');
         }
 
         $twig->addMethodCall('addGlobal', array('available_languages', $languages));

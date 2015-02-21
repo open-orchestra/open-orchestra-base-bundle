@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPOrchestra\BaseBundle\DependencyInjection;
+namespace OpenOrchestra\BaseBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\Loader;
  *
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
  */
-class PHPOrchestraBaseExtension extends Extension
+class OpenOrchestraBaseExtension extends Extension
 {
     /**
      * {@inheritDoc}
@@ -30,8 +30,8 @@ class PHPOrchestraBaseExtension extends Extension
         ), $config);
 
         $languagesAvailables = $config['languages_availables'];
-        $container->setParameter('php_orchestra_base.languages_availables', $languagesAvailables);
+        $container->setParameter('open_orchestra_base.languages_availables', $languagesAvailables);
 
-        $container->setParameter('php_orchestra_base.encryption_key', $config['encryption_key']);
+        $container->setParameter('open_orchestra_base.encryption_key', $config['encryption_key']);
     }
 }

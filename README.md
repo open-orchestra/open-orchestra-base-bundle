@@ -1,4 +1,4 @@
-phporchestra-base-bundle
+open-orchestra-base-bundle
 ========================
 
 | Service       | Badge         |

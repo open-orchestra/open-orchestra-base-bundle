@@ -1,6 +1,6 @@
 {
-    "name": "itkg/phporchestra-base-bundle",
-    "description": "The phpOrchestra base bundle",
+    "name": "itkg/open-orchestra-base-bundle",
+    "description": "The OpenOrchestra base bundle",
     "license": "MIT",
     "authors": [
         {
@@ -30,9 +30,9 @@
     },
     "autoload": {
         "psr-0": {
-            "PHPOrchestra\\BaseBundle": ""
+            "OpenOrchestra\\BaseBundle": ""
         }
     },
-    "target-dir": "PHPOrchestra"
+    "target-dir": "OpenOrchestra"
 }
 

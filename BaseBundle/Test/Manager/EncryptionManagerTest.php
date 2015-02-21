@@ -1,8 +1,8 @@
 <?php
 
-namespace PHPOrchestra\BaseBundle\Test\Manager;
+namespace OpenOrchestra\BaseBundle\Test\Manager;
 
-use PHPOrchestra\BaseBundle\Manager\EncryptionManager;
+use OpenOrchestra\BaseBundle\Manager\EncryptionManager;
 
 /**
  * Class EncryptionManagerTest

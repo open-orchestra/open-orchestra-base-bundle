@@ -1,9 +1,9 @@
 <?php
 
-namespace PHPOrchestra\BaseBundle\Test\EventListener;
+namespace OpenOrchestra\BaseBundle\Test\EventListener;
 
 use Phake;
-use PHPOrchestra\BaseBundle\EventListener\LocaleListener;
+use OpenOrchestra\BaseBundle\EventListener\LocaleListener;
 use Symfony\Component\HttpKernel\KernelEvents;
 
 /**
