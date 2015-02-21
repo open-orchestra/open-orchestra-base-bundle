@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPOrchestra\BaseBundle\Manager;
+namespace OpenOrchestra\BaseBundle\Manager;
 
 /**
  * Class EncryptionManager

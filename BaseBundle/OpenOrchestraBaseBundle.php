@@ -1,15 +1,15 @@
 <?php
 
-namespace PHPOrchestra\BaseBundle;
+namespace OpenOrchestra\BaseBundle;
 
-use PHPOrchestra\BaseBundle\DependencyInjection\Compiler\TwigAvailableLanguagesCompilerPass;
+use OpenOrchestra\BaseBundle\DependencyInjection\Compiler\TwigAvailableLanguagesCompilerPass;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
- * Class PHPOrchestraBaseBundle
+ * Class OpenOrchestraBaseBundle
  */
-class PHPOrchestraBaseBundle extends Bundle
+class OpenOrchestraBaseBundle extends Bundle
 {
     /**
      * @param ContainerBuilder $container

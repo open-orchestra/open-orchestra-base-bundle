@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPOrchestra\BaseBundle\Context;
+namespace OpenOrchestra\BaseBundle\Context;
 
 
 /**

@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPOrchestra\BaseBundle\Cache;
+namespace OpenOrchestra\BaseBundle\Cache;
 
 /**
  * Interface CacheManagerInterface

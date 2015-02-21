@@ -1,13 +1,13 @@
 parameters:
-    php_orchestra_base.listener.locale.class : PHPOrchestra\BaseBundle\EventListener\LocaleListener
-    php_orchestra_base.manager.encryption.class: PHPOrchestra\BaseBundle\Manager\EncryptionManager
+    open_orchestra_base.listener.locale.class : OpenOrchestra\BaseBundle\EventListener\LocaleListener
+    open_orchestra_base.manager.encryption.class: OpenOrchestra\BaseBundle\Manager\EncryptionManager
 
 services:
-    php_orchestra_base.locale_listener:
-        class: %php_orchestra_base.listener.locale.class%
+    open_orchestra_base.locale_listener:
+        class: %open_orchestra_base.listener.locale.class%
         arguments: [%kernel.default_locale%]
         tags: [{name: kernel.event_subscriber}]
-    php_orchestra_base.manager.encryption:
-        class: %php_orchestra_base.manager.encryption.class%
+    open_orchestra_base.manager.encryption:
+        class: %open_orchestra_base.manager.encryption.class%
         arguments:
-            - %php_orchestra_base.encryption_key%
+            - %open_orchestra_base.encryption_key%

@@ -1,9 +1,9 @@
 <?php
 
-namespace PHPOrchestra\BaseBundle\Test\DependencyInjection\Compiler;
+namespace OpenOrchestra\BaseBundle\Test\DependencyInjection\Compiler;
 
 use Phake;
-use PHPOrchestra\BaseBundle\DependencyInjection\Compiler\TwigAvailableLanguagesCompilerPass;
+use OpenOrchestra\BaseBundle\DependencyInjection\Compiler\TwigAvailableLanguagesCompilerPass;
 
 /**
  * Class TwigAvailableLanguagesCompilerPassTest
@@ -48,7 +48,7 @@ class TwigAvailableLanguagesCompilerPassTest extends \PHPUnit_Framework_TestCase
 
         $this->compiler->process($this->container);
 
-        Phake::verify($this->container)->has('php_orchestra_base.languages.availables');
+        Phake::verify($this->container)->has('open_orchestra_base.languages.availables');
         Phake::verify($this->twig)->addMethodCall('addGlobal', array(
             'available_languages',
             array('en', 'fr', 'de', 'es')
@@ -67,8 +67,8 @@ class TwigAvailableLanguagesCompilerPassTest extends \PHPUnit_Framework_TestCase
 
         $this->compiler->process($this->container);
 
-        Phake::verify($this->container)->has('php_orchestra_base.languages.availables');
-        Phake::verify($this->container)->getParameter('php_orchestra_base.languages.availables');
+        Phake::verify($this->container)->has('open_orchestra_base.languages.availables');
+        Phake::verify($this->container)->getParameter('open_orchestra_base.languages.availables');
         Phake::verify($this->twig)->addMethodCall('addGlobal', array(
             'available_languages',
             $languages

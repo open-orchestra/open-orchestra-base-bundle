@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPOrchestra\BaseBundle\EventListener;
+namespace OpenOrchestra\BaseBundle\EventListener;
 
 use Symfony\Component\HttpKernel\Event\GetResponseEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
