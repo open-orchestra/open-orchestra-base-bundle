@@ -1,6 +1,7 @@
 parameters:
     open_orchestra_base.listener.locale.class : OpenOrchestra\BaseBundle\EventListener\LocaleListener
     open_orchestra_base.manager.encryption.class: OpenOrchestra\BaseBundle\Manager\EncryptionManager
+    open_orchestra_base.manager.tag.class: OpenOrchestra\BaseBundle\Manager\TagManager
 
 services:
     open_orchestra_base.locale_listener:
@@ -11,3 +12,5 @@ services:
         class: %open_orchestra_base.manager.encryption.class%
         arguments:
             - %open_orchestra_base.encryption_key%
+    open_orchestra_base.manager.tag:
+        class: %open_orchestra_base.manager.tag.class%
