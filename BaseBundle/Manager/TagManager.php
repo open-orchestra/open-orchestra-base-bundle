@@ -86,7 +86,7 @@ class TagManager
      * 
      * return string
      */
-    public function formatMediaId($mediaId)
+    public function formatMediaIdTag($mediaId)
     {
         return 'mediaId-' . $mediaId;
     }
