@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenOrchestra\BaseBundle\Test\EventListener;
+namespace OpenOrchestra\BaseBundle\Tests\EventListener;
 
 use Phake;
 use OpenOrchestra\BaseBundle\EventListener\LocaleListener;
