@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenOrchestra\BaseBundle\Test\Manager;
+namespace OpenOrchestra\BaseBundle\Tests\Manager;
 
 use OpenOrchestra\BaseBundle\Manager\EncryptionManager;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenOrchestra\BaseBundle\Test\DependencyInjection\Compiler;
+namespace OpenOrchestra\BaseBundle\Tests\DependencyInjection\Compiler;
 
 use Phake;
 use OpenOrchestra\BaseBundle\DependencyInjection\Compiler\TwigAvailableLanguagesCompilerPass;
