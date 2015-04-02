@@ -1,5 +1,5 @@
 {
-    "name": "itkg/open-orchestra-base-bundle",
+    "name": "open-orchestra/open-orchestra-base-bundle",
     "description": "The OpenOrchestra base bundle",
     "license": "Apache-2.0",
     "authors": [
