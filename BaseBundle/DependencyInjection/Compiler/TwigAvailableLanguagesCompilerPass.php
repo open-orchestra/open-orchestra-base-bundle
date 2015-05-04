@@ -21,7 +21,7 @@ class TwigAvailableLanguagesCompilerPass implements CompilerPassInterface
     {
         $twig = $container->getDefinition('twig');
 
-        $languages = array('en', 'fr', 'de', 'es');
+        $languages = array('en', 'fr');
         if ($container->has('open_orchestra_base.languages.availables')) {
             $languages = $container->getParameter('open_orchestra_base.languages.availables');
         }
