@@ -23,7 +23,7 @@ class Configuration implements ConfigurationInterface
         $rootNode->children()
             ->arrayNode('languages_availables')
                 ->prototype('scalar')->end()
-                ->defaultValue(array('en', 'fr', 'de', 'es'))
+                ->defaultValue(array('en', 'fr'))
             ->end()
             ->scalarNode('encryption_key')->end()
         ->end();

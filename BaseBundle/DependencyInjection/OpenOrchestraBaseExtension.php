@@ -26,7 +26,7 @@ class OpenOrchestraBaseExtension extends Extension
         $loader->load('services.yml');
 
         $config = array_merge(array(
-            'languages_availables' => array('en', 'fr', 'de', 'es')
+            'languages_availables' => array('en', 'fr')
         ), $config);
 
         $languagesAvailables = $config['languages_availables'];
