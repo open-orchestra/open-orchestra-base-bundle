@@ -25,7 +25,7 @@ class Configuration implements ConfigurationInterface
                 ->prototype('scalar')->end()
                 ->defaultValue(array('en', 'fr'))
             ->end()
-            ->scalarNode('encryption_key')->end()
+            ->scalarNode('encryption_key')->defaultValue('ThisKeyIsNotSecret')->end()
         ->end();
 
         return $treeBuilder;
