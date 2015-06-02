@@ -11,12 +11,12 @@
     "minimum-stability": "dev",
     "require": {
         "php" : ">=5.4",
-        "symfony/symfony" : "2.6.8",
+        "symfony/symfony" : "2.7.0",
         "twig/extensions" : "1.2.0",
         "symfony/assetic-bundle" : "2.6.1",
         "symfony/monolog-bundle" : "2.7.1",
-        "sensio/distribution-bundle" : "3.0.24",
-        "sensio/framework-extra-bundle" : "3.0.7",
+        "sensio/distribution-bundle" : "3.0.28",
+        "sensio/framework-extra-bundle" : "3.0.8",
         "sensio/generator-bundle" : "2.5.3",
         "snc/redis-bundle" : "1.1.8"
     },
