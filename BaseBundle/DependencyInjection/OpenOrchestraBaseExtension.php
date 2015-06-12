@@ -25,13 +25,11 @@ class OpenOrchestraBaseExtension extends Extension
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
 
-        $config = array_merge(array(
-            'languages_availables' => array('en', 'fr')
-        ), $config);
+        if (count($config['languages_availables']) == 0) {
+            $config['languages_availables'] = array('en', 'fr');
+        }
 
-        $languagesAvailables = $config['languages_availables'];
-        $container->setParameter('open_orchestra_base.languages_availables', $languagesAvailables);
-
+        $container->setParameter('open_orchestra_base.languages_availables', $config['languages_availables']);
         $container->setParameter('open_orchestra_base.encryption_key', $config['encryption_key']);
     }
 }
