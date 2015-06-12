@@ -44,11 +44,11 @@ class TwigAvailableLanguagesCompilerPassTest extends \PHPUnit_Framework_TestCase
      */
     public function testWithNoParameters()
     {
-        Phake::when($this->container)->has(Phake::anyParameters())->thenReturn(false);
+        Phake::when($this->container)->hasParameter(Phake::anyParameters())->thenReturn(false);
 
         $this->compiler->process($this->container);
 
-        Phake::verify($this->container)->has('open_orchestra_base.languages.availables');
+        Phake::verify($this->container)->hasParameter('open_orchestra_base.languages_availables');
         Phake::verify($this->twig)->addMethodCall('addGlobal', array(
             'available_languages',
             array('en', 'fr')
@@ -62,13 +62,13 @@ class TwigAvailableLanguagesCompilerPassTest extends \PHPUnit_Framework_TestCase
      */
     public function testWithParameters(array $languages)
     {
-        Phake::when($this->container)->has(Phake::anyParameters())->thenReturn(true);
+        Phake::when($this->container)->hasParameter(Phake::anyParameters())->thenReturn(true);
         Phake::when($this->container)->getParameter(Phake::anyParameters())->thenReturn($languages);
 
         $this->compiler->process($this->container);
 
-        Phake::verify($this->container)->has('open_orchestra_base.languages.availables');
-        Phake::verify($this->container)->getParameter('open_orchestra_base.languages.availables');
+        Phake::verify($this->container)->hasParameter('open_orchestra_base.languages_availables');
+        Phake::verify($this->container)->getParameter('open_orchestra_base.languages_availables');
         Phake::verify($this->twig)->addMethodCall('addGlobal', array(
             'available_languages',
             $languages
