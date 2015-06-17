@@ -21,7 +21,7 @@ class Configuration implements ConfigurationInterface
         $rootNode = $treeBuilder->root('open_orchestra_base');
 
         $rootNode->children()
-            ->arrayNode('languages_availables')
+            ->arrayNode('administration_languages')
                 ->prototype('scalar')->end()
                 ->defaultValue(array('en', 'fr'))
             ->end()
