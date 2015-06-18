@@ -48,9 +48,9 @@ class TwigAvailableLanguagesCompilerPassTest extends \PHPUnit_Framework_TestCase
 
         $this->compiler->process($this->container);
 
-        Phake::verify($this->container)->hasParameter('open_orchestra_base.languages_availables');
+        Phake::verify($this->container)->hasParameter('open_orchestra_base.administration_languages');
         Phake::verify($this->twig)->addMethodCall('addGlobal', array(
-            'available_languages',
+            'administration_languages',
             array('en', 'fr')
         ));
     }
@@ -67,10 +67,10 @@ class TwigAvailableLanguagesCompilerPassTest extends \PHPUnit_Framework_TestCase
 
         $this->compiler->process($this->container);
 
-        Phake::verify($this->container)->hasParameter('open_orchestra_base.languages_availables');
-        Phake::verify($this->container)->getParameter('open_orchestra_base.languages_availables');
+        Phake::verify($this->container)->hasParameter('open_orchestra_base.administration_languages');
+        Phake::verify($this->container)->getParameter('open_orchestra_base.administration_languages');
         Phake::verify($this->twig)->addMethodCall('addGlobal', array(
-            'available_languages',
+            'administration_languages',
             $languages
         ));
     }
