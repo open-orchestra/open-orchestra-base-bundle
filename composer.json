@@ -21,7 +21,8 @@
         "snc/redis-bundle" : "1.1.8"
     },
     "require-dev": {
-        "scrutinizer/ocular": "1.1.1",
+        "psr/log": "1.0.0",
+        "codeclimate/php-test-reporter": "dev-master",
         "phpunit/phpunit" : "4.7.2",
         "phake/phake": "2.1.0"
     },
