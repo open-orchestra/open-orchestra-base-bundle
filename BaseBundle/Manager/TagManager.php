@@ -12,7 +12,7 @@ class TagManager
      * 
      * @param string $nodeId
      * 
-     * return string
+     * @return string
      */
     public function formatNodeIdTag($nodeId)
     {
@@ -24,7 +24,7 @@ class TagManager
      * 
      * @param string $language
      * 
-     * return string
+     * @return string
      */
     public function formatLanguageTag($language)
     {
@@ -36,7 +36,7 @@ class TagManager
      * 
      * @param string $siteId
      * 
-     * return string
+     * @return string
      */
     public function formatSiteIdTag($siteId)
     {
@@ -48,7 +48,7 @@ class TagManager
      * 
      * @param string $blockType
      * 
-     * return string
+     * @return string
      */
     public function formatBlockTypeTag($blockType)
     {
@@ -60,7 +60,7 @@ class TagManager
      * 
      * @param string $contentType
      * 
-     * return string
+     * @return string
      */
     public function formatContentTypeTag($contentType)
     {
@@ -72,7 +72,7 @@ class TagManager
      * 
      * @param string $contentId
      * 
-     * return string
+     * @return string
      */
     public function formatContentIdTag($contentId)
     {
@@ -84,7 +84,7 @@ class TagManager
      * 
      * @param string $mediaId
      * 
-     * return string
+     * @return string
      */
     public function formatMediaIdTag($mediaId)
     {
