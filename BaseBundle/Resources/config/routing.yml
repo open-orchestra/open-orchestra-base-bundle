@@ -1,0 +1,5 @@
+node_preview:
+    path: /preview/{token}
+
+node_preview_with_prefix:
+    path: /{languagePrefix}/preview/{token}
