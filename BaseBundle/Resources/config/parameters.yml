@@ -1,3 +1,2 @@
 parameters:
-    open_orchestra_base.preview_route_pattern: /preview/{token}
-    open_orchestra_base.preview_with_prefix_route_pattern: /{languagePrefix}/preview/{token}
+    open_orchestra_base.preview_route_pattern: /preview/{nodeId}/{aliasId}/{token}
