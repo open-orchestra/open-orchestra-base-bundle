@@ -27,6 +27,8 @@ class Configuration implements ConfigurationInterface
                 ->defaultValue(array('en', 'fr'))
             ->end()
             ->scalarNode('encryption_key')->defaultValue('ThisKeyIsNotSecret')->end()
+            ->scalarNode('filter_type_strategy_folder')->defaultValue('vendor/open-orchestra/open-orchestra-libs/OpenOrchestra/Pagination/MongoTrait/FilterTypeStrategy/')->end()
+            ->scalarNode('filter_type_strategy_config')->defaultValue('filter_strategy_configuration.yml')->end()
         ->end();
 
         return $treeBuilder;
