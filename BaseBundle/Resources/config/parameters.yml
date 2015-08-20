@@ -1,2 +1,4 @@
 parameters:
     open_orchestra_base.preview_route_pattern: /preview/{nodeId}/{aliasId}/{token}
+    open_orchestra_filter_type_strategy_folder: vendor/open-orchestra/open-orchestra-libs/OpenOrchestra/Pagination/MongoTrait/FilterTypeStrategy/
+    open_orchestra_filter_type_strategy_config: filter_strategy_configuration.yml

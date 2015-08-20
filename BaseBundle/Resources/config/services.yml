@@ -2,6 +2,7 @@ parameters:
     open_orchestra_base.listener.locale.class : OpenOrchestra\BaseBundle\EventListener\LocaleListener
     open_orchestra_base.manager.encryption.class: OpenOrchestra\BaseBundle\Manager\EncryptionManager
     open_orchestra_base.manager.tag.class: OpenOrchestra\BaseBundle\Manager\TagManager
+    open_orchestra_base.annotation_search_reader.class: OpenOrchestra\BaseApi\Mapping\Reader\SearchMappingReader
 
 services:
     open_orchestra_base.locale_listener:
@@ -14,3 +15,7 @@ services:
             - %open_orchestra_base.encryption_key%
     open_orchestra_base.manager.tag:
         class: %open_orchestra_base.manager.tag.class%
+    open_orchestra_base.annotation_search_reader:
+        class: %open_orchestra_base.annotation_search_reader.class%
+        arguments:
+            - @open_orchestra_model.annotation_reader

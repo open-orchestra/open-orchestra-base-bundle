@@ -32,5 +32,11 @@ class OpenOrchestraBaseExtension extends Extension
 
         $container->setParameter('open_orchestra_base.administration_languages', $config['administration_languages']);
         $container->setParameter('open_orchestra_base.encryption_key', $config['encryption_key']);
+
+        $filterStrategyFolder = $container->getParameter("kernel.root_dir")."/../".$container->getParameter('open_orchestra_filter_type_strategy_folder');
+        if (is_dir($filterStrategyFolder)) {
+            $loaderPaginationConfig = new Loader\YamlFileLoader($container, new FileLocator($filterStrategyFolder));
+            $loaderPaginationConfig->load($container->getParameter("open_orchestra_filter_type_strategy_config"));
+        }
     }
 }
