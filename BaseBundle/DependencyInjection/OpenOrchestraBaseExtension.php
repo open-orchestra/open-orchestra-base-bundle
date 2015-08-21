@@ -30,6 +30,9 @@ class OpenOrchestraBaseExtension extends Extension
             $config['administration_languages'] = array('en', 'fr');
         }
 
+
+        $container->setAlias('object_manager', $config['object_manager']);
+
         $container->setParameter('open_orchestra_base.administration_languages', $config['administration_languages']);
         $container->setParameter('open_orchestra_base.encryption_key', $config['encryption_key']);
 
