@@ -15,7 +15,7 @@ abstract class AbstractTaggedCompiler
      * @param string           $managerName
      * @param string           $tagName
      */
-    protected function addStrategyToManager(ContainerBuilder $container, $managerName, $tagName)
+    protected function addStrategyToManager(ContainerBuilder $container, $managerName, $tagName, $methodName = 'addStrategy')
     {
         if (!$container->hasDefinition($managerName)) {
             return;
@@ -24,7 +24,7 @@ abstract class AbstractTaggedCompiler
         $manager = $container->getDefinition($managerName);
         $strategies = $container->findTaggedServiceIds($tagName);
         foreach ($strategies as $id => $attributes) {
-            $manager->addMethodCall('addStrategy', array(new Reference($id)));
+            $manager->addMethodCall($methodName, array(new Reference($id)));
         }
     }
 }
