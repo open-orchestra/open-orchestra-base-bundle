@@ -3,6 +3,7 @@ parameters:
     open_orchestra_base.manager.encryption.class: OpenOrchestra\BaseBundle\Manager\EncryptionManager
     open_orchestra_base.manager.tag.class: OpenOrchestra\BaseBundle\Manager\TagManager
     open_orchestra_base.annotation_search_reader.class: OpenOrchestra\BaseBundle\Mapping\Reader\SearchMappingReader
+    open_orchestra_base.annotation_reader.class: Doctrine\Common\Annotations\AnnotationReader
 
 services:
     open_orchestra_base.locale_listener:
@@ -15,7 +16,9 @@ services:
             - %open_orchestra_base.encryption_key%
     open_orchestra_base.manager.tag:
         class: %open_orchestra_base.manager.tag.class%
+    open_orchestra_base.annotation_reader:
+        class: %open_orchestra_base.annotation_reader.class%
     open_orchestra_base.annotation_search_reader:
         class: %open_orchestra_base.annotation_search_reader.class%
         arguments:
-            - @open_orchestra_model.annotation_reader
+            - @open_orchestra_base.annotation_reader
