@@ -27,8 +27,9 @@ class Configuration implements ConfigurationInterface
                 ->defaultValue(array('en', 'fr'))
             ->end()
             ->scalarNode('encryption_key')->defaultValue('ThisKeyIsNotSecret')->end()
-            ->scalarNode('filter_type_strategy_folder')->defaultValue('vendor/open-orchestra/open-orchestra-libs/OpenOrchestra/Pagination/MongoTrait/FilterTypeStrategy/')->end()
-            ->scalarNode('filter_type_strategy_config')->defaultValue('filter_strategy_configuration.yml')->end()
+            ->scalarNode('orchestra_lib_folder')->defaultValue('vendor/open-orchestra/open-orchestra-libs/OpenOrchestra/')->end()
+            ->scalarNode('filter_type_strategy_config')->defaultValue('Pagination/MongoTrait/FilterTypeStrategy/filter_strategy_configuration.yml')->end()
+            ->scalarNode('annotation_reader_config')->defaultValue('Mapping/annotation_reader.yml')->end()
             ->booleanNode('activate_filter_type_strategy')->defaultValue(true)->end()
         ->end();
 
