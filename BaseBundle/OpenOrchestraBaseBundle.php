@@ -20,6 +20,5 @@ class OpenOrchestraBaseBundle extends Bundle
         parent::build($container);
 
         $container->addCompilerPass(new TwigAvailableLanguagesCompilerPass());
-        $container->addCompilerPass(new FilterTypePaginationCompilerPass());
     }
 }
