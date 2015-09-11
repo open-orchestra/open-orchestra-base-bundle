@@ -2,7 +2,6 @@
 
 namespace OpenOrchestra\BaseBundle;
 
-use OpenOrchestra\BaseBundle\DependencyInjection\Compiler\FilterTypePaginationCompilerPass;
 use OpenOrchestra\BaseBundle\DependencyInjection\Compiler\TwigAvailableLanguagesCompilerPass;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
