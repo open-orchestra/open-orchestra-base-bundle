@@ -26,11 +26,6 @@ class OpenOrchestraBaseExtension extends Extension
         $loader->load('services.yml');
         $loader->load('parameters.yml');
 
-        if (count($config['administration_languages']) == 0) {
-            $config['administration_languages'] = array('en', 'fr');
-        }
-
-
         $container->setAlias('object_manager', $config['object_manager']);
 
         $container->setParameter('open_orchestra_base.administration_languages', $config['administration_languages']);
