@@ -1,0 +1,6 @@
+open_orchestra_base:
+    object_manager: fake_object_manager
+    administration_languages:
+        - fake_language
+        - fake_language2
+    encryption_key: fake_encryption
