@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: perruchot
- * Date: 11/5/15
- * Time: 3:37 PM
- */
 
 namespace OpenOrchestra\BaseBundle\Tests\DependencyInjection\Compiler;
 
