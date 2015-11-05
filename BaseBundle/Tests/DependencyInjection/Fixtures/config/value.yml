@@ -4,3 +4,7 @@ open_orchestra_base:
         - fake_language
         - fake_language2
     encryption_key: fake_encryption
+
+parameters:
+    open_orchestra:
+        version: fake_version
