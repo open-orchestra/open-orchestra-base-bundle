@@ -22,7 +22,6 @@ class OpenOrchestraBaseExtensionTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(array('en', 'fr'), $container->getParameter('open_orchestra_base.administration_languages'));
         $this->assertEquals('ThisKeyIsNotSecret', $container->getParameter('open_orchestra_base.encryption_key'));
         $this->assertEquals('doctrine.odm.mongodb.document_manager', $container->getAlias('object_manager'));
-        $this->isNull($container->getParameter('open_orchestra')['version']);
     }
 
     /**
@@ -35,7 +34,6 @@ class OpenOrchestraBaseExtensionTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(array('fake_language', 'fake_language2'), $container->getParameter('open_orchestra_base.administration_languages'));
         $this->assertEquals('fake_encryption', $container->getParameter('open_orchestra_base.encryption_key'));
         $this->assertEquals('fake_object_manager', $container->getAlias('object_manager'));
-        $this->assertEquals('fake_version', $container->getParameter('open_orchestra')['version']);
     }
 
     /**
