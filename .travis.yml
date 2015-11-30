@@ -4,16 +4,10 @@ cache:
   directories:
     - ~/.composer/cache
 
-services:
-    - redis-server
-
 php:
   - 5.4
 
 sudo: false
-
-before_install:
-  - phpenv config-add .travis.php.ini
 
 install:
   - composer install --no-progress --prefer-dist
