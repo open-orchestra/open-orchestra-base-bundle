@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenOrchestra\BaseBundle\Tests;
+namespace OpenOrchestra\BaseBundle\Tests\AbstractTest;
 
 /**
  * Class AbstractBaseTestCase

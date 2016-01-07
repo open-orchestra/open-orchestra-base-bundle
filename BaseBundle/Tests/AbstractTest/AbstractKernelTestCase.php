@@ -2,10 +2,12 @@
 
 namespace OpenOrchestra\BaseBundle\Tests\AbstractTest;
 
+use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
+
 /**
- * Class AbstractBaseTestCase
+ * Class AbstractKernelTestCase
  */
-class AbstractBaseTestCase extends \PHPUnit_Framework_TestCase
+class AbstractKernelTestCase extends KernelTestCase
 {
     use TestCleanUpTearDownTrait;
 }
