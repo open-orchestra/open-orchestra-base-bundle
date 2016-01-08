@@ -7,7 +7,7 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 /**
  * Class AbstractWebTestCase
  */
-abstract class  AbstractWebTestCase extends WebTestCase
+abstract class AbstractWebTestCase extends WebTestCase
 {
     use TestCleanUpTearDownTrait;
 }
