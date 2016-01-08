@@ -14,6 +14,7 @@ trait TestCleanUpTearDownTrait
      */
     protected function tearDown()
     {
+        parent::tearDown();
         $refl = new ReflectionObject($this);
         foreach ($refl->getProperties() as $prop) {
             if (!$prop->isStatic() && 0 !== strpos($prop->getDeclaringClass()->getName(), 'PHPUnit_')) {
