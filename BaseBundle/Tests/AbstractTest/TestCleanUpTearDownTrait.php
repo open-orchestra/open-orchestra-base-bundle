@@ -2,6 +2,8 @@
 
 namespace OpenOrchestra\BaseBundle\Tests\AbstractTest;
 
+use ReflectionObject;
+
 /**
  * Class TestCleanUpTearDownTrait
  */
