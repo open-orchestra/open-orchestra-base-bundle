@@ -7,7 +7,7 @@ use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 /**
  * Class AbstractKernelTestCase
  */
-class AbstractKernelTestCase extends KernelTestCase
+abstract class AbstractKernelTestCase extends KernelTestCase
 {
     use TestCleanUpTearDownTrait;
 }
