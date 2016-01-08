@@ -3,11 +3,12 @@
 namespace OpenOrchestra\BaseBundle\Tests\Manager;
 
 use OpenOrchestra\BaseBundle\Manager\EncryptionManager;
+use OpenOrchestra\BaseBundle\Tests\AbstractTest\AbstractBaseTestCase;
 
 /**
  * Class EncryptionManagerTest
  */
-class EncryptionManagerTest extends \PHPUnit_Framework_TestCase
+class EncryptionManagerTest extends AbstractBaseTestCase
 {
     /**
      * @var EncryptionManager

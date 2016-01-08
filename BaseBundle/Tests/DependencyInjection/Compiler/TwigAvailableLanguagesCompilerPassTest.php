@@ -2,13 +2,14 @@
 
 namespace OpenOrchestra\BaseBundle\Tests\DependencyInjection\Compiler;
 
+use OpenOrchestra\BaseBundle\Tests\AbstractTest\AbstractBaseTestCase;
 use Phake;
 use OpenOrchestra\BaseBundle\DependencyInjection\Compiler\TwigAvailableLanguagesCompilerPass;
 
 /**
  * Class TwigAvailableLanguagesCompilerPassTest
  */
-class TwigAvailableLanguagesCompilerPassTest extends \PHPUnit_Framework_TestCase
+class TwigAvailableLanguagesCompilerPassTest extends AbstractBaseTestCase
 {
     /**
      * @var TwigAvailableLanguagesCompilerPass

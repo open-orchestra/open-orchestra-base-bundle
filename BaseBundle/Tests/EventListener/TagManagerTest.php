@@ -3,12 +3,12 @@
 namespace OpenOrchestra\BaseBundle\Tests\EventListener;
 
 use OpenOrchestra\BaseBundle\Manager\TagManager;
-use Phake;
+use OpenOrchestra\BaseBundle\Tests\AbstractTest\AbstractBaseTestCase;
 
 /**
  * Test TagManagerTest
  */
-class TagManagerTest extends \PHPUnit_Framework_TestCase
+class TagManagerTest extends AbstractBaseTestCase
 {
     /**
      * @var TagManager

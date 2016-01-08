@@ -2,6 +2,7 @@
 
 namespace OpenOrchestra\BaseBundle\Tests\EventListener;
 
+use OpenOrchestra\BaseBundle\Tests\AbstractTest\AbstractBaseTestCase;
 use Phake;
 use OpenOrchestra\BaseBundle\EventListener\LocaleListener;
 use Symfony\Component\HttpKernel\KernelEvents;
@@ -9,7 +10,7 @@ use Symfony\Component\HttpKernel\KernelEvents;
 /**
  * Class LocaleListenerTest
  */
-class LocaleListenerTest extends \PHPUnit_Framework_TestCase
+class LocaleListenerTest extends AbstractBaseTestCase
 {
     /**
      * @var LocaleListener
