@@ -49,6 +49,7 @@ class TagManagerTest extends AbstractBaseTestCase
             array('formatContentTypeTag', 'contentType-'),
             array('formatContentIdTag', 'contentId-'),
             array('formatMediaIdTag', 'mediaId-'),
+            array('formatMenuTag', 'menu-'),
         );
     }
 }
