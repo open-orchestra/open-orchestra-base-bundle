@@ -90,4 +90,16 @@ class TagManager
     {
         return 'mediaId-' . $mediaId;
     }
+
+    /**
+     * Format menu tag
+     *
+     * @param string $siteId
+     *
+     * @return string
+     */
+    public function formatMenuTag($siteId)
+    {
+        return 'menu-' . $siteId;
+    }
 }
