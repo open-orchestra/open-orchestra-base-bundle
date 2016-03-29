@@ -10,6 +10,7 @@ php:
 sudo: false
 
 install:
+  - composer self-update
   - composer install --no-progress --prefer-dist
 
 script: ./bin/phpunit
