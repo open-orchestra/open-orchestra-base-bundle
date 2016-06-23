@@ -11,7 +11,7 @@ sudo: false
 
 install:
   - composer self-update
-  - if [[ $TRAVIS_BRANCH = master ]]; then export COMPOSER_ROOT_VERSION=dev-master; else export COMPOSER_ROOT_VERSION=$TRAVIS_BRANCH.x-dev; fi;
+  - export COMPOSER_ROOT_VERSION=1.1.x-dev
   - composer install --no-progress --prefer-dist
 
 script: ./bin/phpunit
