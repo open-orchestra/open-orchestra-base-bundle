@@ -11,6 +11,7 @@ sudo: false
 
 install:
   - composer self-update
+  - export COMPOSER_ROOT_VERSION=dev-master
   - composer install --no-progress --prefer-dist
 
 script: ./bin/phpunit
