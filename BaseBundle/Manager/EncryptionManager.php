@@ -24,8 +24,7 @@ class EncryptionManager
      */
     public function encrypt($token)
     {
-        return base64_encode($token);
-
+        return urlencode(base64_encode(mcrypt_encrypt(MCRYPT_RIJNDAEL_256, md5($this->key), $token, MCRYPT_MODE_CBC, md5(md5($this->key)))));
     }
 
     /**
@@ -35,6 +34,6 @@ class EncryptionManager
      */
     public function decrypt($encryptedToken)
     {
-        return base64_decode($encryptedToken);
+        return rtrim(mcrypt_decrypt(MCRYPT_RIJNDAEL_256, md5($this->key), base64_decode(urldecode($encryptedToken)), MCRYPT_MODE_CBC, md5(md5($this->key))), "\0");
     }
 }

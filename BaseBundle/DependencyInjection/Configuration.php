@@ -26,7 +26,10 @@ class Configuration implements ConfigurationInterface
                 ->prototype('scalar')->end()
                 ->defaultValue(array('en', 'fr'))
             ->end()
-            ->scalarNode('encryption_key')->defaultValue('ThisKeyIsNotSecret')->end()
+            ->scalarNode('encryption_key')
+                 ->info('This value should be common with the front, media and back office applications')
+                ->defaultValue('ThisKeyIsNotSecret')
+            ->end()
         ->end();
 
         return $treeBuilder;
