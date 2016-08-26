@@ -23,11 +23,15 @@ class TagManager
      * Format language tag
      * 
      * @param string $language
-     * 
+     *
+     * @deprecated deprecated since version 1.2.0 and will be removed in 2.0.0
+     *
      * @return string
      */
     public function formatLanguageTag($language)
     {
+        @trigger_error('The '.__METHOD__.' method is deprecated since version 1.2.0 and will be removed in 2.0.0', E_USER_DEPRECATED);
+
         return 'language-' . $language;
     }
 
@@ -35,11 +39,15 @@ class TagManager
      * Format site id tag
      * 
      * @param string $siteId
-     * 
+     *
+     * @deprecated deprecated since version 1.2.0 and will be removed in 2.0.0
+     *
      * @return string
      */
     public function formatSiteIdTag($siteId)
     {
+        @trigger_error('The '.__METHOD__.' method is deprecated since version 1.2.0 and will be removed in 2.0.0', E_USER_DEPRECATED);
+
         return 'site-' . $siteId;
     }
 
@@ -59,7 +67,7 @@ class TagManager
      * Format content type tag
      * 
      * @param string $contentType
-     * 
+     *
      * @return string
      */
     public function formatContentTypeTag($contentType)
