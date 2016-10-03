@@ -11,10 +11,10 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
  */
 class OpenOrchestraBaseBundle extends Bundle
 {
-    const VERSION = '1.2.0';
-    const VERSION_ID = 10100;
-    const MAJOR_VERSION = 1;
-    const MINOR_VERSION = 2;
+    const VERSION = '2.0.0';
+    const VERSION_ID = 20000;
+    const MAJOR_VERSION = 2;
+    const MINOR_VERSION = 0;
     const RELEASE_VERSION = 0;
     const EXTRA_VERSION = 'DEV';
 
