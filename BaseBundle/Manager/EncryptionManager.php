@@ -35,7 +35,8 @@ class EncryptionManager
     public function decrypt($encryptedToken)
     {
         $decryptedToken = rtrim(mcrypt_decrypt(MCRYPT_RIJNDAEL_256, md5($this->key), base64_decode(urldecode($encryptedToken)), MCRYPT_MODE_CBC, md5(md5($this->key))), "\0");
-        if (false === $decryptedToken || false === ctype_xdigit($decryptedToken)) {
+
+        if (false === $decryptedToken ) {
             throw new \InvalidArgumentException('Invalid decrypted token. Check the encryption key');
         }
 
