@@ -11,7 +11,7 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
  */
 class OpenOrchestraBaseBundle extends Bundle
 {
-    const VERSION = '1.1.6-DEV';
+    const VERSION = '1.1.6';
     const VERSION_ID = 10106;
     const MAJOR_VERSION = 1;
     const MINOR_VERSION = 1;
