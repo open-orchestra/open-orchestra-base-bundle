@@ -16,7 +16,7 @@ class OpenOrchestraBaseBundle extends Bundle
     const MAJOR_VERSION = 1;
     const MINOR_VERSION = 2;
     const RELEASE_VERSION = 0;
-    const EXTRA_VERSION = 'DEV';
+    const EXTRA_VERSION = 'STABLE';
 
     /**
      * @param ContainerBuilder $container
