@@ -21,4 +21,5 @@ interface CurrentSiteIdInterface
      * @return string
      */
     public function getCurrentSiteDefaultLanguage();
+
 }
