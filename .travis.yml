@@ -6,6 +6,7 @@ cache:
 
 php:
   - 5.6
+  - 7.2
 
 sudo: false
 
